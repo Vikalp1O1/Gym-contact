@@ -14,7 +14,7 @@ function Contact() {
     e.preventDefault();
     setLoading(true);
     try {
-      const {data} = await axios.post('http://localhost:4001/send/email', {
+      const {data} = await axios.post('https://backend-for-gym-contact.onrender.com/send/email', {
         name,
         email,
         message,
